@@ -1,0 +1,60 @@
+<!DOCTYPE>
+<html>
+<head>
+  <title>Algebra</title>
+  <style>
+  body {
+    background: #d882b4;
+    color: #5b2624;
+  }
+  </style>
+</head>
+<body>
+  <h1>Más allá de la línea de comandos.</h1>
+  <h3>bc es un programa mediante el cual evaluamos expresiones matemáticas.</h3>
+  <p>Variables:</p>
+  <p>x=12</p>
+  <p>y=6</p>
+  <p>a=3</p>
+  <P>b=4</P>
+  <script>
+    var x = 12
+    var y = 6
+    var exp1 = 2 * x;
+    document.write("El resultado de evaluar 2*x es " + exp1);
+
+    var exp2 = x + y;
+    document.write("El resultado de evaluar x+y es " + exp2);
+
+    var base = y - x;
+    var exp3 = Math.pow (base, 2);
+    document.write("El resultado de evaluar (y-x)^2 es " + exp3);
+
+    var exp4 = x * y;
+    document.write("El resultado de evaluar x*y es " + exp4);
+
+    var exp5 = y / 2;
+    document.write("El resultado de evaluar b/2 es " + exp5);
+
+    var a = 3
+    var b = 4
+    var resultado1 = (2*a) + (3*b);
+    document.write("Elresultado de evaluar (2*a) + (3*b) es " + resultado1);
+
+    var potencia = Math.pow (3,b);
+    var resultado2 = (potencia) / a;
+    document.write("El resultado de evaluar (3^b) / a es " + resultado2);
+
+    var resultado3 = b - 3;
+    document.write("El resultado de evaluar b-3 es " + resultado3);
+
+    var base2 = a + b;
+    var resultado4 = Math.pow (base2,2);
+    document.write("El resultado de evaluar (8a+b)^2 es " + resultado4);
+
+    var potencia2 = Math.pow (a,2);
+    var resultado5 = (potencia2) / (b-1);
+    document.write("El resultado de evaluar (a^2)/(b-1) es " + resultado5);
+  </script>
+</body>
+</html>
