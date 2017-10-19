@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Peso en otros planetas</title>
+</head>
+<body>
+  <h1>¿Cuánto pesas fuera de este mundo?</h1>
+  <h2>Descubre tu peso en otros planetas!</h2>
+  <script>
+  var usuario = prompt("¿Cuánto pesas?");
+  var peso = parseFloat(usuario);
+  var tierra = 9.8;
+  var marte = 3.7;
+  var jupiter = 9.8;
+  var peso_final = parseInt((peso * marte) / tierra);
+  document.write("Tú peso en Marte es de " + peso_final + " Kilogramos");
+  </script>
+</body>
+</html>
