@@ -14,6 +14,12 @@ alert (nombre + " tiene 3 años") Resultado: Aisha tiene 3 años.] :dog:
 * `+`: Es una concatenación que sirve para formar oraciones. :mushroom:
 * `parseInt`: Obtenemos el resultado sin decimales de cualquier expresión. :cherry_blossom:
 * `parseFloat`: Nos ayuda a realizar un calculo con decimales. :sunflower:
+* `=`: Sirve para asignar una variable. :notes:
+* `= =`: Sirve para comparar variables. :star: :dizzy:
+* `\n`: Nos sirve para dar un salto de linea. :horse_racing:
+* `if`: Significa sí (){}. :cloud:
+* `else`: Significa sino {}. :umbrella:
+* `algoritmo`: Es una serie de pasos que sigues para resolver un problema. :mag_right:  
 
 * Notas.
  1. Los números decimanles son denominados como flotantes. :ghost:
