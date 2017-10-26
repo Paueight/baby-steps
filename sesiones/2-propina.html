@@ -1,0 +1,18 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Propina</title>
+</head>
+<body>
+  <h2>Tu consuma más la propina ¿Cuánto pagaras en total?</h2>
+  <script>
+    var cuenta = prompt("Ingrese la cuenta total de su consumo.");
+    var propina = prompt("Ingresa el porcentaje de propina que desea dejar.");
+    var cuenta_flotante = parseFloat(cuenta);
+    var propina_flotante = parseFloat(propina) * .01;
+    var propina_total = (cuenta_flotante * propina_flotante);
+    var total = (cuenta_flotante + propina_total);
+    document.write("El total de la cuenta con propina incluida es de " + total + " pesos");
+  </script>
+</body>
+</html>
