@@ -15,19 +15,24 @@
     var peso_final;
     //var nombre_planeta = "Namekusei";
 
-    if (planeta == 1) {
-      peso_final = parseInt((peso * marte) / tierra);
-      //nombre_planeta = "Marte";
-      document.write("La gravedad en Marte es de 3.7, por lo tanto tu peso es de " + peso_final + " Kilogramos.");
-    }
-    else if (planeta == 2) {
-      peso_final = parseInt((peso * jupiter) / tierra);
-      //nombre_planeta = "Jupiter";
-      document.write("La gravedad en Jupiter es de 24.7, por lo tanto tu peso es de " + peso_final + " Kilogramos.");
+    if (peso <= 150) {
+      if (planeta == 1) {
+        peso_final = ((peso * marte) / tierra).toFixed(2);
+        //nombre_planeta = "Marte";
+        document.write("La gravedad en Marte es de 3.7, por lo tanto tu peso es de " + peso_final + " Kilogramos.");
+      }
+      else if (planeta == 2) {
+        peso_final = ((peso * jupiter) / tierra).toFixed(2);
+        //nombre_planeta = "Jupiter";
+        document.write("La gravedad en Jupiter es de 24.7, por lo tanto tu peso es de " + peso_final + " Kilogramos.");
+      }
+      else {
+        //peso_final = 1000000;
+        document.write("Ingresa una opción válida");
+      }
     }
     else {
-      //peso_final = 1000000;
-      document.write("Estás loco! Ingresa una opción válida XD");
+      document.write("El peso máximo es de 150 kg, ingresa una opción válida. :D");
     }
 
     //document.write("Tu peso en " + nombre_planeta + " es de " + peso_final + " Kilogramos");
