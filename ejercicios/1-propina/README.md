@@ -1,7 +1,7 @@
-### Calcula tu peso en otros planetas. :earth_americas: :full_moon:
+### Calculadora de propinas.
 
 #### Entender el problema.
-#### Requerimientos --> ¿Que necesitas? :first_quarter_moon_with_face:
+#### Requerimientos --> ¿Que necesitas? :information_desk_person:
 * El usuario unicamente recibira el monto de la propina?
 * Se mostrara al usuario la cuenta total con propina incluida?
 * O se mostrara al usuario el monto de la propina y el total con la propina ya incluida?
@@ -10,11 +10,11 @@
 * El usuario podra ingresar el porcentaje que desee o seleccionar entre algunas opciones de porcentajes?
 #### Declaración --> ¿Que vas a construir? :rocket:
 * Crear un programa que calcule propinas. El usuario debera ingresar el monto de su cuenta y porsteriormente ingresar el porcentaje de propina que desea dejar. El programa calculará la propina con relacion al monto ingresado y finalmente mostrara al usuario el monto de la propina y el total de la cuenta con propina incluida.
-#### Salida de ejemplo. :sunny:
+#### Salida de ejemplo. :feet:
 * Ingrese la cuenta total de su consumo. 283
 * Ingrese el porcentaje de propina que desea dejar. 15%
 * El monto de propina es de (), por lo tanto el total de la cuenta con propina incluida es de. 325.45 pesos.
-#### Descubrir entradas, procesos y salidas. :star:
+#### Descubrir entradas, procesos y salidas. :eyes:
 ###### Sustantivos                
 * cuenta
 * porcentaje de propina
@@ -87,6 +87,18 @@ Calculadora de propinas
   Inicializar cuenta con propina incluida a 0
 
   Solicitar cuenta con Ingrese la cuenta total de su consumo.
+  Si cuenta es igual a NaN:
+  alerta error
+  mostrar "Intentalo nuevamente"
+  Si no:
   Solicitar porcentaje de propina con Ingrese el porcentaje de propina que desea dejar.
-
+  Si propina es igual a NaN:
+  alerta error
+  mostrar "Intentalo nuevamente"
+  Si no:
+  cuenta_flotante= cuenta
+  propina_flotante= (propina)*.01
+  propina_total= (cuenta_flotante*propina_flotante)
+  total= (cuenta_flotante+propina_total)
+  mostrar "El monto de propina es de (), por lo tanto el total de la cuenta con propina incluida es de () pesos"
  ```
