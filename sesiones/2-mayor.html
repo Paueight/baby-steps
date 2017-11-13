@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+  </head>
+  <h1> ¡Es mayor :D!</h1>
+  <body>
+    <script>
+      /*
+      Declaración:
+      Crear un programa que me de el número mayor.
+      El programa debe solicitar dos números y calcular cuál es el mayor.
+      El programa debe mostrar ambos número y el número mayor.
+
+      Salida ejemplo:
+      Ingresa el primer número: 2
+      Ingresa el segundo número: 6
+      El mayor es 6
+
+      Entradas, procesos y salidas:
+      Entradas: Número uno y dos
+      Procesos: Calcular el mayor
+      Salidas: El número mayor
+
+      Pesudocódigo:
+      ElMayor
+        Inicializar primerNumero = 0
+        Inicializar segundoNumero = 0
+        Inicializar tercerNumero = 0
+        Inicializar elMayor = 0
+
+        Solicitar primer número con "Ingresa primer número:"
+        Solicitar segundo número con "Ingresa segundo número"
+        Solicitar tercer número con "Ingresa tercer número"
+
+        Si primerNumero es mayor que segundoNumero
+          elMayor = primerNumero
+        Si Sino segundoNumero es mayor que tercerNumero
+          elMayor = segundoNumero
+        Sino
+          elMayor = tercerNumero
+
+        Mostrar "El mayor es: elMayor"
+      Fin
+      */
+      var primerNumero = 0;
+      var segundoNumero = 0;
+      var elMayor = 0;
+      primerNumero = parseInt(prompt("Ingresa el primer número"));
+      segundoNumero = parseInt(prompt("Ingresa el segundo número"));
+      tercerNumero = parseInt(prompt("Ingresa un tercer número"));
+
+      if (primerNumero > segundoNumero) {
+        elMayor = primerNumero;
+      } else if (segundoNumero > tercerNumero) {
+        elMayor = segundoNumero;
+      } else {
+        elMayor = tercerNumero;
+      }
+
+      document.write("El mayor es: " + elMayor)
+
+      /*
+        Reto:
+        El mayor de 3 números: el usuario debe ingresar 3 números.
+      */
+    </script>
+  </body>
+</html>
