@@ -2,9 +2,15 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Hi</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <script>
+    <h1>Hola, humano!</h1>
+    <h2>¿Cuantos carácteres tiene tu nombre?</h2>
+    <input id="nombre" type="text" placeholder="nombre">
+    <input type="button" value="Contar" onclick="contarCaracteres()">
+    <script src="script.js">
       /*
         Escribir un programa que le pida su nombre al usuario y lo salude.
 
@@ -15,8 +21,6 @@
         Retos:
         Escribe una nueva versión del programa sin usar variables.
       */
-      var nombre = (prompt("¿Cuál es tu nombre?"));
-      document.write("Hola, " + nombre + " mucho gusto :D")
     </script>
   </body>
 </html>
