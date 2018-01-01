@@ -1,12 +1,12 @@
-var edad = document.getElementById("edadUs");
-var años = document.getElementById("añosUs");
+var edadElemento = document.getElementById("edadUs");
+var añosElemento = document.getElementById("añosUs");
 var boton = document.getElementById("botonDes");
 boton.addEventListener("click", calcularAños);
 
 function calcularAños() {
 
-  var edad = parseInt(edadUs.value);
-  var años = parseInt(añosUs.value);
+  var edad = parseInt(edadElemento.value);
+  var años = parseInt(añosElemento.value);
   var jubilacion = (años - edad);
   var fecha = new Date();
   var añoActual = fecha.getFullYear();

@@ -1,15 +1,15 @@
-var sustantivo = document.getElementById("sustantivoUs");
-var verbo = document.getElementById("verboUs");
-var adjetivo = document.getElementById("adjetivoUs");
-var adverbio = document.getElementById("adverbioUs");
+var sustantivoElemento = document.getElementById("sustantivoUs");
+var verboElemento = document.getElementById("verboUs");
+var adjetivoElemento = document.getElementById("adjetivoUs");
+var adverbioElemento = document.getElementById("adverbioUs");
 var boton = document.getElementById("botonHistoria");
 boton.addEventListener("click", formarHistoria);
 
 function formarHistoria() {
-  var sustantivo = (sustantivoUs.value);
-  var verbo = (verboUs.value);
-  var adjetivo = (adjetivoUs.value);
-  var adverbio = (adverbioUs.value);
+  var sustantivo = (sustantivoElemento.value);
+  var verbo = (verboElemento.value);
+  var adjetivo = (adjetivoElemento.value);
+  var adverbio = (adverbioElemento.value);
 
   document.write("Tu " + sustantivo + " " + adjetivo + " prefiere " + verbo + " " + adverbio + ".");
 }

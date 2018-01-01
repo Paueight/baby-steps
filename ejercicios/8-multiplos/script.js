@@ -1,10 +1,10 @@
-var numero = document.getElementById("numeroUs");
+var numeroElemento = document.getElementById("numeroUs");
 var boton = document.getElementById("botonSumar");
 boton.addEventListener("click", sumarMultiplos);
 
 function sumarMultiplos() {
 
-  var numero = parseInt(numeroUs.value);
+  var numero = parseInt(numeroElemento.value);
   var suma = 0;
   for (var i = 1; i < numero; i++) {
 

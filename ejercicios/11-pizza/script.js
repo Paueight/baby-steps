@@ -1,14 +1,14 @@
-var personas = document.getElementById("personasUs");
-var pizzas = document.getElementById("pizzasUs");
-var rebanadas = document.getElementById("rebanadasUs");
+var personasElemento = document.getElementById("personasUs");
+var pizzasElemento = document.getElementById("pizzasUs");
+var rebanadasElemento = document.getElementById("rebanadasUs");
 var boton = document.getElementById("botonPizza");
 boton.addEventListener("click", calcularRebanadas);
 
 function calcularRebanadas() {
 
-  var personas = parseInt(personasUs.value);
-  var pizzas = parseInt(pizzasUs.value);
-  var rebanadas = parseInt(rebanadasUs.value);
+  var personas = parseInt(personasElemento.value);
+  var pizzas = parseInt(pizzasElemento.value);
+  var rebanadas = parseInt(rebanadasElemento.value);
   var rebanadasPizza = (pizzas * rebanadas);
   var rebanadasPersona = parseInt(rebanadasPizza / personas);
   var pizzaSobra = (rebanadasPizza - (rebanadasPersona * personas));

@@ -1,9 +1,9 @@
-var edadConducir = document.getElementById("edadUs");
+var edadElemento = document.getElementById("edadUs");
 var boton = document.getElementById("botonVerificar");
 boton.addEventListener("click", verificar);
 
 function verificar() {
- var edad = parseInt(edadConducir.value);
+ var edad = parseInt(edadElemento.value);
 
  if (edad >= 16) {
     document.write("Tienes la edad necesaria para manejar!");

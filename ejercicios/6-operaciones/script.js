@@ -1,11 +1,11 @@
-var primerNumero = document.getElementById("numeroUno");
-var segundoNumero = document.getElementById("numeroDos");
+var primerNum = document.getElementById("numeroUno");
+var segundoNum = document.getElementById("numeroDos");
 var boton = document.getElementById("botonCalcular");
 boton.addEventListener("click", imprimirOperaciones);
 
 function imprimirOperaciones() {
-  var primerNumero = parseInt(numeroUno.value);
-  var segundoNumero = parseInt(numeroDos.value);
+  var primerNumero = parseInt(primerNum.value);
+  var segundoNumero = parseInt(segundoNum.value);
 
   if (primerNumero > 0 && segundoNumero > 0) {
     suma(primerNumero, segundoNumero);
