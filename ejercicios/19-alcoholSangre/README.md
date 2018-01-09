@@ -19,7 +19,7 @@ Tu cantidad de alcohol es 0.08, no es legal que manejes.
 
 #### Dibujar diagrama de flujo
 
-![](../DiagramaFlujo2.jpg)
+![](../diagramaAlcohol.jpeg)
 
 #### Algoritmo en Pseudocódigo
 ```
@@ -28,6 +28,10 @@ Inicializar genero a ""
 Inicializar numero dde bebidas a ""
 Inicializar alcohol por bebida a ""
 Inicualizar tiempo de ultima bebida a ""
+Inicializar BCA a 0
+Inicializar alcoholMujer a 0.66
+Inicializar alcoholHombre a 0.73
+Inicializar alcoholIlegal a 0.08
 
 pesoUsuario = SOlicitar peso del usuario
 generoUsuario = Solicitar genero del usuario
@@ -36,16 +40,15 @@ cantidadAlcoholBebida = Solicitar cantida de alcohol por volumen de bebidas cons
 tiempoUltimaBebida = Solicitar cantidad de tiempo desde la última bebida
 
 Si genero == mujer
- BCA (totalAlcohol * 5.14 / pesoUsuario * generoUsuario) - 0.15 * tiempoUltimaBebida
- Si BCA >= que 0.08
- "No es legal que manejes"
- Si BCA < que 0.08
- "Si es legal que manejes"
+  BCA (totalAlcohol * 5.14 / pesoUsuario * generoUsuario) - 0.15 * tiempoUltimaBebida
 
 Si genero == hombre
- BCA (totalAlcohol * 5.14 / pesoUsuario * generoUsuario) - 0.15 * tiempoUltimaBebida
- Si BCA >= que 0.08
- "No es legal que manejes"
- Si BCA < que 0.08
- "Si es legal que manejes"
+  BCA (totalAlcohol * 5.14 / pesoUsuario * generoUsuario) - 0.15 * tiempoUltimaBebida
+
+Si bca >= alcoholIlegal
+  Mostrar "No es legal que manejes"
+
+Si bca < que alcoholIlegal
+  Mostrar "Si es legal que manejes"
+
 ```

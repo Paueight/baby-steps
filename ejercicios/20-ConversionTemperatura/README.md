@@ -21,27 +21,26 @@ La temperatura en Centígrados es 0
 ##### Verbos
 * convertir
 * solicitar
-* hacer
 
 #### Dibujar diagrama de flujo
 
-![](../DiagramaFlujo3.jpg)
+![](../diagramaTemperatura.jpeg)
 
 #### Algoritmo en Pseudocódigo
 ```
 Inicializar fahrenheit a ""
 Inicializar centigrados a ""
-Inicializar temperatura a ""
+Inicializar temperatura Inicial a ""
 
 temperaturaInicial = Solicitar temperatura
 gradosFahrenheit = Solictar grados fahrenheit
 gradosCentigrados = Solicitar grados centigrados
 
 Si grados == fahrenheit
-C = ((temperaturaInicial - 32) * (5 / 9))
-"La temperatura en Centigrados es: "
+  temperatura = ((temperaturaInicial * (9 / 5)) + 32)
+  Mostrar "La temperatura en Fahrenheit es: "
 
 Si grados == centigrados
-F = ((temperaturaInicial * (9 / 5)) + 32)
-"La temperatura en Fahrenheit es: "
+  temperatura = ((temperaturaInicial - 32) * (5 / 9))
+  Mostrar "La temperatura en Centigrados es: "
 ```

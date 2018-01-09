@@ -19,24 +19,20 @@ function calcular() {
   var bca = 0;
   const alcoholMujeres = 0.66;
   const alcoholHombres = 0.73;
-  const alcoholLegal = 0.08;
+  const alcoholIlegal = 0.08;
 
   if (genero == "mujer") {
     bca = (((totalAlcohol * 5.14) / (peso * alcoholMujeres)) - (0.15 * tiempoUltimaBebida));
     console.log(bca);
-    if (bca >= alcoholLegal) {
-      document.write("Tu cantidad de alcohol es " + bca.toFixed(2) + "</br>" + "No es legal que manejes");
-    }
-    else if (bca < alcoholLegal) {
-      document.write("Tu cantidad de alcohol es " + bca.toFixed(2) + "</br>" + "Si es legal que manejes");
-    }
-  } else if (genero == "hombre") {
+  }
+    else if (genero == "hombre") {
     bca = ((totalAlcohol * 5.14 / peso * alcoholHombres) - 0.15 * tiempoUltimaBebida);
     console.log(bca);
-    if (bca >= alcoholLegal) {
-      document.write("Tu cantidad de alcohol es " + bca.toFixed(2) + "</br>" + "No es legal que manejes");
-    } else if (bca < alcoholLegal) {
-      document.write("Tu cantidad de alcohol es " + bca.toFixed(2) + "</br>" + "Si es legal que manejes");
-    }
+  }
+  if (bca >= alcoholIlegal) {
+    document.write("Tu cantidad de alcohol es " + bca.toFixed(2) + "</br>" + "No es legal que manejes");
+  }
+    else if (bca < alcoholIlegal) {
+    document.write("Tu cantidad de alcohol es " + bca.toFixed(2) + "</br>" + "Si es legal que manejes");
   }
 }
